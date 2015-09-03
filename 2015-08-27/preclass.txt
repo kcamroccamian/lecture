@@ -14,6 +14,13 @@
     central server; this takes an overhead time alpha per task.
     What is the theoretically achievable throughput (tasks/time)?
 
+    T= time per task
+    k tasks
+    k*(T+alpha) total time for k tasks
+    k*T is parallel part
+    Overheadfor k tasks is k*alpha
+    k tasks in time k*alpha is best case - rate is k/(k*alpha)= 1/alpha
+
 3.  Under what circumstances is it best to not tune?
 
 4.  The class cluster consists of eight nodes and fifteen Xeon Phi
